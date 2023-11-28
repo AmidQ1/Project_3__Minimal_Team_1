@@ -5,19 +5,11 @@
     padding-right: 16px;
 }
 
-h1{
-    color: red;
-}
-
 // table
 @media (min-width: $table){
     .container{
         padding-left: 32px;
         padding-right: 32px;
-    }
-
-    h1{
-        color: blue;
     }
 }
 
@@ -31,9 +23,5 @@ h1{
         &-large{
             width: 1096px;
         }
-    }
-
-    h1{
-        color: purple;
     }
 }

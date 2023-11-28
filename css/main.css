@@ -4,13 +4,13 @@
   padding-right: 16px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .container {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
   .container {
     width: 1020px;
     padding-left: 0;
