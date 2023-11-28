@@ -1,0 +1,39 @@
+// mobile
+.container{
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+h1{
+    color: red;
+}
+
+// table
+@media (min-width: $table){
+    .container{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    h1{
+        color: blue;
+    }
+}
+
+// desktop
+@media (max-width: $desktop){
+    .container{
+        width: 1020px;
+        padding-left: 0;
+        padding-right: 0;
+
+        &-large{
+            width: 1096px;
+        }
+    }
+
+    h1{
+        color: purple;
+    }
+}
