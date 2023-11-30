@@ -14,7 +14,7 @@
 }
 
 // desktop
-@media (max-width: $desktop){
+@media (min-width: $desktop){
     .container{
         width: 1020px;
         padding-left: 0;

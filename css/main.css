@@ -10,7 +10,7 @@
     padding-right: 32px;
   }
 }
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
   .container {
     width: 1020px;
     padding-left: 0;
