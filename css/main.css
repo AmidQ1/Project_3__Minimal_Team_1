@@ -12,11 +12,11 @@
 }
 @media (min-width: 1440px) {
   .container {
-    width: 1020px;
+    width: 1096px;
     padding-left: 0;
     padding-right: 0;
   }
   .container-large {
-    width: 1096px;
+    width: 100%;
   }
 }
