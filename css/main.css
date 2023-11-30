@@ -1,19 +1,18 @@
-.banner-box__button {
+.banner-content__button {
   display: flex;
   width: 224px;
   height: 50px;
   padding: 17px 65px;
   justify-content: center;
   align-items: center;
-  gap: 6px;
-  flex-shrink: 0;
-  background: var(--Blue-font, #0A224A);
+  background: #0A224A;
 }
 
 .container {
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -24,12 +23,12 @@
 }
 @media (min-width: 1440px) {
   .container {
-    width: 1020px;
+    width: 1096px;
     padding-left: 0;
     padding-right: 0;
   }
   .container-large {
-    width: 1096px;
+    width: 1320px;
   }
 }
 .banner {
@@ -53,7 +52,7 @@
 }
 .banner-box__title {
   width: 285px;
-  color: var(--Blue-font, #0A224A);
+  color: #0A224A;
   font-family: "Playfair Display", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -62,18 +61,21 @@
   text-transform: uppercase;
   margin-bottom: 14px;
 }
-.banner-box__subtitle {
-  width: 343px;
-  color: var(--Blue-font, #0A224A);
-  font-size: 16px;
+.banner-content {
+  padding-left: 16px;
+}
+.banner-content__subtitle {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+  width: 343px;
+  color: #0A224A;
+  font-size: 16px;
   margin-bottom: 21px;
 }
-.banner-box__button {
+.banner-content__button {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -96,14 +98,17 @@
     line-height: 75px;
     margin-bottom: 410px;
   }
-  .banner-box__subtitle {
+  .banner-content {
+    padding: 0;
+  }
+  .banner-content__subtitle {
     width: 312px;
     margin-bottom: 41px;
   }
 }
 @media (min-width: 1440px) {
   .banner {
-    height: 648px;
+    height: 530px;
   }
   .banner-pict {
     width: 1320px;
@@ -126,12 +131,14 @@
     margin-top: 0;
     margin-bottom: 235px;
   }
-  .banner-box__subtitle {
+  .banner-content {
+    padding: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .banner-content__subtitle {
     width: 312px;
     margin-bottom: 41px;
-    margin-left: 1011px;
-  }
-  .banner-box__button {
-    margin-left: 1011px;
   }
 }

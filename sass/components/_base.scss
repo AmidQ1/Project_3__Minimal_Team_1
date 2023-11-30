@@ -3,6 +3,7 @@
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
+    margin: 0 auto;
 }
 
 // table
@@ -16,12 +17,12 @@
 // desktop
 @media (min-width: $desktop){
     .container{
-        width: 1020px;
+        width: 1096px;
         padding-left: 0;
         padding-right: 0;
 
         &-large{
-            width: 1096px;
+            width: 1320px;
         }
     }
 }
