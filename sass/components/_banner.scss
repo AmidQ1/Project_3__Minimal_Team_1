@@ -21,7 +21,6 @@
         &__title{
             width: 285px;
             color: $main_color;
-            font-size: 28px;
             font-family: "Playfair Display", sans-serif;
             font-size: 28px;
             font-style: normal;
@@ -48,7 +47,7 @@
     }
 }
 
-@media (min-width: $table){
+@media (min-width: $tablet){
 .banner{
     height: 860px;
     &-box{
