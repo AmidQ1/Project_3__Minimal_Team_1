@@ -1,3 +1,15 @@
+.banner-box__button {
+  display: flex;
+  width: 224px;
+  height: 50px;
+  padding: 17px 65px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  background: var(--Blue-font, #0A224A);
+}
+
 .container {
   width: 100%;
   padding-left: 16px;
@@ -28,5 +40,110 @@ h1 {
   }
   h1 {
     color: purple;
+  }
+}
+.banner {
+  width: 100%;
+  height: 717px;
+  position: relative;
+}
+.banner-pict {
+  position: relative;
+}
+.banner-pict__img-banner {
+  position: absolute;
+  z-index: -1;
+}
+.banner-pict__img-banner-min {
+  display: none;
+}
+.banner-box {
+  padding-top: 140px;
+  padding-left: 16px;
+}
+.banner-box__title {
+  width: 285px;
+  color: var(--Blue-font, #0A224A);
+  font-size: 28px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.banner-box__subtitle {
+  width: 343px;
+  color: var(--Blue-font, #0A224A);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 21px;
+}
+.banner-box__button {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  color: #FFF;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 860px;
+  }
+  .banner-box {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .banner-box__title {
+    width: 648px;
+    font-size: 50px;
+    line-height: 75px;
+    margin-bottom: 410px;
+  }
+  .banner-box__subtitle {
+    width: 312px;
+    margin-bottom: 41px;
+  }
+}
+@media (min-width: 1440px) {
+  .banner {
+    height: 648px;
+  }
+  .banner-pict {
+    width: 1320px;
+    display: flex;
+  }
+  .banner-pict__img-banner-min {
+    z-index: -1;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+  }
+  .banner-box {
+    padding: 0;
+  }
+  .banner-box__title {
+    width: 648px;
+    color: var(--Blue-font, #0A224A);
+    font-size: 50px;
+    line-height: 75px;
+    margin-top: 0;
+    margin-bottom: 235px;
+  }
+  .banner-box__subtitle {
+    width: 312px;
+    margin-bottom: 41px;
+    margin-left: 1011px;
+  }
+  .banner-box__button {
+    margin-left: 1011px;
   }
 }
