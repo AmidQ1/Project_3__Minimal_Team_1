@@ -13,6 +13,26 @@
     <title>Minimal</title>
 </head>
 <body class="container container-large">
-    <h1>Hello</h1>
+    <!-- banner -->
+    <div class="banner">
+        <picture>
+            <!-- desktop -->
+            <source srcset="./img/banner_desktop_1x.png 1x, ./img/banner_desktop_2x.png 2x" media="(min-width: 1200px)">
+            <!-- table -->
+            <source srcset="./img/banner_table_1x.png 1x, ./img/banner_table_2x.png 2x"  media="(min-width: 768px)">
+            <!-- mobile -->
+            <source srcset="./img/banner_mobile_1x.png 1x, ./img/banner_mobile_2x.png 2x"  media="(max-width: 480px)">
+            <img class="banner__img-banner" src="./img/banner.png" alt="banner">
+        </picture>
+        <picture>
+            <!-- desktop -->
+            <source srcset="./img/banner_min_desk_1x.png 1x, ./img/banner_min_desk_2x.png 2x" media="(min-width: 1200px)">
+            <img class="banner__img-banner-min" src="./img/banner_min_desk_1x.png" alt="min_desktop">
+        </picture>
+
+        <h1 class="banner__title">Modern and minimalist furniture for you</h1>
+        <span class="banner__subtitle">Add a touch of elegance to your space with handcrafted furniture pieces</span>
+        <button class="banner__button">Subscribe</button>
+    </div>
 </body>
 </html>
