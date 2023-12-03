@@ -1,0 +1,155 @@
+// .newsletter{
+//     width: 100%;
+//     height: 848px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+
+//     &__title{
+//         @include title;
+//         text-align: center;
+//         color: $main_color;
+//     }
+
+//     &__subtitle{
+//         @include text;
+//         width: 383px;
+//         color: $main_color;
+//     }
+
+//     &__text{
+//         @include text;
+//         color: $gray;
+
+//         width: 343px;
+//         height: 50px;
+//         padding: 11px 20px;
+//         display: flex;
+//         align-items: center;
+
+//         border: 1px solid $gray;
+//         margin-bottom: 20px;
+//     }
+
+//     &-content{
+//         width: 393px;
+//         display: flex;
+//         justify-content: flex-start;
+//         flex-direction: column;
+
+//         &-box{
+//             display: flex;
+//             align-items: center;
+//             justify-content: flex-start;
+
+//             &__check{
+//                 width: 25px;
+//                 height: 25px;
+
+//                 border: 1px solid $gray;
+
+//                 &-text{
+//                     @include text;
+//                     color: $gray;
+//                 }
+//             }
+//         }
+
+//         &__button{
+//             @extend %bth;
+//             @include text;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             color: $white;
+//             margin-top: 32px;
+//             margin-bottom: 30px;
+//         }
+//     }
+
+//     &__img-newsletter{
+//         width: 393px;
+//         height: 320px;
+//     }
+
+// }
+
+// @media (min-width: $tablet){
+
+    .newsletter{
+        width: 100%;
+        height: 1055px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        &__title{
+            @include title;
+            color: $main_color;
+        }
+    
+        &__subtitle{
+            @include text;
+            width: 383px;
+            color: $main_color;
+        }
+    
+        &__text{
+            @include text;
+            color: $gray;
+    
+            width: 536px;
+            height: 50px;
+            padding: 11px 20px;
+            display: flex;
+            align-items: center;
+    
+            border: 1px solid $gray;
+            margin-bottom: 20px;
+        }
+    
+        &-content{
+            width: 536px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+    
+            &-box{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+    
+                &__check{
+                    width: 25px;
+                    height: 25px;
+    
+                    border: 1px solid $gray;
+    
+                    &-text{
+                        @include text;
+                        color: $gray;
+                    }
+                }
+            }
+    
+            &__button{
+                @extend %bth;
+                @include text;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $white;
+                margin-top: 32px;
+                margin-bottom: 30px;
+            }
+        }
+    
+        &__img-newsletter{
+            width: 704px;
+            height: 396px;
+        }
+    
+    }
+// }

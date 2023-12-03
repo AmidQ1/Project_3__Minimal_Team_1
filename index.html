@@ -9,13 +9,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Minimal</title>
 </head>
 <body>
     <main>
         <section class="container container-large">
-            
+            <!-- NEWSLETTER -->
+                <article class="newsletter">
+                    <h2 class="newsletter__title"><b>NEWSLETTER</b></h2>
+                    <p class="newsletter__subtitle"><b>Every week we will send you new designs and information about sales.</b></p>
+                    <input class="newsletter__text newsletter__text-name" placeholder="Name" class="" type="name" id="input-name">
+                    <input class="newsletter__text newsletter__text-email" placeholder="E-mail" class="" type="email" id="input-email">
+                    <div class="newsletter-content">
+                        <div class="newsletter-content-box">
+                            <input class="newsletter-content-box__check" class="" type="checkbox">
+                                <label class="newsletter-content-box__check-text">Agree to subscribe to the newsletter</label>
+                        </div>
+                        <button class="newsletter-content__button">Send</button>
+                    </div>
+                    <picture>
+                        <!-- desktop -->
+                        <source srcset="./images/newsletter_desktop_1x.png 1x, ./images/newsletter_desktop_2x.png 2x" media="(min-width: 1200px)">
+                        <!-- tablet -->
+                        <source srcset="./images/newsletter_tablet_1x.png 1x, ./images/newsletter_tablet_2x.png 2x" media="(min-width: 768px)">
+                        <!-- mobile -->
+                        <source srcset="./images/newsletter_mobile_1x.png 1x, ./images/newsletter_mobile_2x.png 2x" media="(max-width: 480px)">
+
+                        <img class="newsletter__img-newsletter" src="./images/newsletter_mobile_1x.png" alt="newsletter">
+                    </picture>
+                </article>
         </section>
     </main>
 </body>
