@@ -18,24 +18,26 @@
         }
 
         &-text{
-            width: 343px;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
+            overflow: hidden;
 
             &__title{
-                @include text;
-                width: 135px;
+                @include title;
+                width: 250px;
                 font-weight: bold;
                 color: $main_color;
                 position: relative;
-                transform: translateX(-40%);
-                transition: left 5s ease;
+                transform: translateX(-20%);
+                transition-property: all;
+                transition: left 0.5s ease;
                 display: flex;
                 
                 &:hover{
-                    transition: left 1s ease;
+                    transition: left 0.5s ease;
+                    transition-property: all;
                     transform: translateX(0);
                 }
 
@@ -49,14 +51,51 @@
                     width: 40px;
                     height: 3px;
                     background-color: $main_color;
-                    margin-top: 10px;
+                    margin-top: 20px;
                     margin-right: 14px;
                 }
             }
 
             &__price{
-
+                @include text;
+                font-weight: bold;
+                color: $main_color;
             }
         }
     }
+}
+
+@media (min-width: $tablet){
+    .menu-site{
+    height: 620px;
+
+    &-box{
+        width: 704px;
+
+        &-text{
+
+            &__title{
+                width: 580px;
+                transform: translateX(-7%);
+            }
+        }
+    }
+}
+}
+
+@media (min-width: $desktop){
+.menu-site{
+    height: 620px;
+    &-box{
+        width: 1096px;
+
+        &-text{
+
+            &__title{
+                width: 896px;
+                transform: translateX(-5%);
+            }
+        }
+    }
+}
 }
