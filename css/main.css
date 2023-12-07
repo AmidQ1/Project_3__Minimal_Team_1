@@ -58,8 +58,8 @@
   color: #0A224A;
   position: relative;
   transform: translateX(-20%);
-  transition-property: all;
   transition: left 0.5s ease;
+  transition-property: all;
   display: flex;
 }
 .menu-site-box-text__title:hover {
