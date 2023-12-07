@@ -55,23 +55,23 @@
   font-weight: bold;
   color: #0A224A;
   position: relative;
+  transform: translateX(-40%);
+  transition: left 5s ease;
   display: flex;
+}
+.menu-site-box-text__title:hover {
+  transition: left 1s ease;
+  transform: translateX(0);
 }
 .menu-site-box-text__title::before {
   content: "";
   display: inline-block;
-  transform: translateX(-100%);
-  transform: translateY(320%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 3px;
   background-color: #0A224A;
-  transition: left 0.5s ease;
+  margin-top: 10px;
   margin-right: 14px;
-  opacity: 0;
-}
-.menu-site-box-text__title:hover::before {
-  transform: translateX(0);
-  transform: translateY(320%);
-  transition: left 0.5s ease;
-  opacity: 1;
 }
