@@ -32,3 +32,11 @@
     line-height: normal;
     letter-spacing: 0.19px;
 }
+
+@mixin message{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
