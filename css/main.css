@@ -21,3 +21,72 @@
     width: 1320px;
   }
 }
+.our-products {
+  width: 100%;
+  height: 507px;
+}
+.our-products-site {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-products-site__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #0A224A;
+  font-weight: bold;
+}
+.our-products-site__object {
+  display: flex;
+  justify-content: space-between;
+}
+.our-products-site-box {
+  margin-right: 24px;
+}
+.our-products-site-box__sofa {
+  display: none;
+}
+.our-products-site-box__table {
+  display: none;
+}
+.our-products-site-box__chair {
+  display: none;
+}
+.our-products-site-box-content {
+  display: flex;
+  flex-direction: column;
+}
+.our-products-site-box-content__img {
+  width: 343px;
+  height: 300px;
+}
+.our-products-site-box-content__info {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  color: #0A224A;
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .our-products-site-box__sofa {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .our-products-site-box__sofa {
+    display: block;
+  }
+  .our-products-site-box__table {
+    display: block;
+  }
+  .our-products-site-box__chair {
+    display: block;
+  }
+}
