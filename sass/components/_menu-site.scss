@@ -72,15 +72,12 @@
     &-box{
         width: 704px;
 
-        &-text{
-
-            &__title{
-                width: 580px;
-                transform: translateX(-7%);
-            }
+        &-text__title{
+            width: 580px;
+            transform: translateX(-7%);
+        }
         }
     }
-}
 }
 
 @media (min-width: $desktop){
@@ -88,14 +85,10 @@
     height: 620px;
     &-box{
         width: 1096px;
-
-        &-text{
-
-            &__title{
+            &-text__title{
                 width: 896px;
                 transform: translateX(-5%);
             }
         }
     }
-}
 }
