@@ -1,0 +1,20 @@
+.header {
+    background: $bg_section;
+    height: 95px;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__list {
+        padding-left: 972px;
+        padding-top: 26px;
+
+        &-item {
+            @include text;
+            color: $main_color;
+            padding-right: 30px;
+            text-decoration: none;
+        }
+    }
+}
