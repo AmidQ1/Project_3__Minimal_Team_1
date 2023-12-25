@@ -5,3 +5,18 @@
 
 // comp
     @import "components/base";
+    @import "components/bestsellers";
+
+// main
+.bestsellers {
+    width: 1096px;
+    height: 637px;
+    margin-left: 172px;
+}
+
+.bestsellers__header {
+    @include title;
+    color: $main_color;
+    display: flex;
+    justify-content: center;
+}

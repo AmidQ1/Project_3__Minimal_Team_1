@@ -20,3 +20,51 @@
     width: 1096px;
   }
 }
+.bestsellers__header {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #0A224A;
+  display: flex;
+  justify-content: center;
+}
+
+.bestsellers__card {
+  width: 536px;
+  height: 562px;
+}
+.bestsellers__card--mini {
+  width: 258px;
+  height: 266px;
+}
+.bestsellers__card_image {
+  height: 489px;
+}
+.bestsellers__card_header {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.bestsellers {
+  width: 1096px;
+  height: 637px;
+  margin-left: 172px;
+}
+
+.bestsellers__header {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: var(--Blue-font, #0A224A);
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,28 @@
+.bestsellers__header {
+    @include title;
+    color: #0A224A;
+    display: flex;
+    justify-content: center;
+}
+
+.bestsellers__card {
+    width: 536px;
+    height: 562px;
+
+    &--mini {
+        width: 258px;
+        height: 266px;
+
+        &-header {
+            
+        }
+    }
+
+    &_image {
+        height: 489px;
+    }
+
+    &_header {
+        @include text
+    }
+}
