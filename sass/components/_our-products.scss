@@ -1,6 +1,5 @@
 .our-products{
     width: 100%;
-    height: 507px;
     
 
     &-site{
@@ -20,20 +19,16 @@
         }
     
         
-            &-box{    
-                margin-right: 24px;
+        &-box{    
+            margin-right: 24px;
 
-                &__sofa{
-                    display: none;
-                }
+            &--invisible{
+                display: none;
+            }
 
-                &__table{
-                    display: none;
-                }
-
-                &__chair{
-                    display: none;
-                }
+            &--douinvisible{
+                display: none;
+            }
 
 
                 &-content{
@@ -56,34 +51,71 @@
     }
 }
 
+.prev-button{
+    
+}
+
 @media (min-width: $tablet){
-    .our-products{   
-        &-site{
-                &-box{    
-                    &__sofa{
-                        display: block;
-                    }
-                }
-        }
+    .our-products-site-box--invisible{  
+        display: block;
     }
 }
 
 @media (min-width: $desktop){
-    .our-products{
-        &-site{
-                &-box{    
-                    &__sofa{
-                        display: block;
-                    }
-    
-                    &__table{
-                        display: block;
-                    }
-    
-                    &__chair{
-                        display: block;
-                    }
-                }
+    .our-products-site-box{    
+        &--invisible{
+            display: block;
         }
+    
+        &--douinvisible{
+            display: block;
+        }
+    }
+}
+
+
+@media (max-width: $tablet) {
+    .our-products-site__object {
+        display: block; 
+    }
+
+    .our-products-site__object > .our-products-site-box {
+        margin-right: 0; 
+    }
+
+    .our-products-site__object.slick-slider {
+        display: flex; 
+    }
+
+    .our-products-site__object .slick-prev,
+    .our-products-site__object .slick-next {
+        display: block; 
+    }
+
+    .our-products-site__object .our-products-site-box {
+        margin-right: 24px; 
+    }
+}
+
+@media (max-width: $mobile) {
+    .our-products-site__object {
+        display: block; 
+    }
+
+    .our-products-site__object > .our-products-site-box {
+        margin-right: 0; 
+    }
+
+    .our-products-site__object.slick-slider {
+        display: flex; 
+    }
+
+    .our-products-site__object .slick-prev,
+    .our-products-site__object .slick-next {
+        display: block; 
+    }
+
+    .our-products-site__object .our-products-site-box {
+        margin-right: 24px; 
     }
 }
