@@ -81,6 +81,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+  border: none;
   color: #FFF;
 }
 
@@ -136,9 +137,5 @@
     position: absolute;
     right: 0;
     bottom: 0;
-  }
-  .banner-content__subtitle {
-    width: 312px;
-    margin-bottom: 41px;
   }
 }

@@ -47,6 +47,7 @@
             @extend %bth;
             @include text;
 
+            border: none;
             color: $white;
         }
     }
