@@ -10,7 +10,6 @@
 
 .newsletter {
   width: 100%;
-  height: 848px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,8 +18,6 @@
 .newsletter-description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .newsletter-description__title {
   font-family: "Roboto", sans-serif;
@@ -42,11 +39,7 @@
   color: #0A224A;
 }
 .newsletter-input {
-  width: 353px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 100%;
 }
 .newsletter-input__text {
   font-family: "Roboto", sans-serif;
@@ -62,7 +55,7 @@
   align-items: center;
   border: 1px solid #7A7A7A;
   margin-bottom: 20px;
-  margin-left: 15px;
+  margin-left: 0;
 }
 .newsletter-content {
   width: 393px;
@@ -94,6 +87,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
