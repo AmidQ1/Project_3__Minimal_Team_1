@@ -10,11 +10,13 @@
         padding-left: 972px;
         padding-top: 26px;
 
+        &_menu {
+            list-style: none;
+        }
+
         &-item {
             @include text;
             color: $main_color;
-            padding-right: 30px;
-            text-decoration: none;
         }
     }
 }
