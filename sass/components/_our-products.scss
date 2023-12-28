@@ -51,71 +51,43 @@
     }
 }
 
-.prev-button{
-    
-}
-
-@media (min-width: $tablet){
-    .our-products-site-box--invisible{  
-        display: block;
-    }
-}
-
-@media (min-width: $desktop){
-    .our-products-site-box{    
-        &--invisible{
-            display: block;
-        }
-    
-        &--douinvisible{
-            display: block;
+    @media (max-width: $mobile) {
+        .our-products-site__object {
+            .our-products-site-box--invisible,
+            .our-products-site-box--douinvisible {
+                display: none;
+            }
         }
     }
-}
 
-
-@media (max-width: $tablet) {
-    .our-products-site__object {
-        display: block; 
+    @media (min-width: $tablet) {
+        .our-products-site__object {
+            .our-products-site-box--invisible {
+                display: block;
+            }
+            .our-products-site-box--douinvisible {
+                display: none;
+            }
+        }
+    
+        .our-products-site-box-content__img{
+            width: 344px;
+            height: 300px;
+            margin-right: 16px;
+        }
     }
 
-    .our-products-site__object > .our-products-site-box {
-        margin-right: 0; 
-    }
+    @media (min-width: $desktop) {
+        .our-products-site__object {
+            .our-products-site-box--invisible,
+            .our-products-site-box--douinvisible {
+                display: block;
+            }
+        }
 
-    .our-products-site__object.slick-slider {
-        display: flex; 
+        .our-products-site-box-content__img{
+            width: 312px;
+            height: 300px;
+            margin-right: 20px;
+        }
     }
-
-    .our-products-site__object .slick-prev,
-    .our-products-site__object .slick-next {
-        display: block; 
-    }
-
-    .our-products-site__object .our-products-site-box {
-        margin-right: 24px; 
-    }
-}
-
-@media (max-width: $mobile) {
-    .our-products-site__object {
-        display: block; 
-    }
-
-    .our-products-site__object > .our-products-site-box {
-        margin-right: 0; 
-    }
-
-    .our-products-site__object.slick-slider {
-        display: flex; 
-    }
-
-    .our-products-site__object .slick-prev,
-    .our-products-site__object .slick-next {
-        display: block; 
-    }
-
-    .our-products-site__object .our-products-site-box {
-        margin-right: 24px; 
-    }
-}
