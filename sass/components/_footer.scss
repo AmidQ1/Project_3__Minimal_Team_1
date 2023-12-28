@@ -1,0 +1,55 @@
+.footer {
+    background: $main_color;
+    height: 262px;
+    padding-top: 48px;
+    padding-left: 60px;
+
+    &__upper-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 500px;
+    }
+
+    &__middle-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 858px;
+
+        &__item {
+            color: $white;
+            font-family: "Roboto", sans-serif;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.19px;
+        }
+    }
+
+    &__lower-section {
+        display: flex;
+
+        &__item {
+            color: $white;
+            font-family: "Roboto", sans-serif;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.19px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+
+        &__item {
+            color:$white;
+            @include text;
+            padding-right: 30px;
+        }
+    }
+}
