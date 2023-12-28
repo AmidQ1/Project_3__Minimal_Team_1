@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Minimal</title>
 </head>
@@ -18,7 +18,7 @@
     <main>
         <section class="container container-large">
             <!-- our-products -->
-            <article class="our-products">
+            <!-- <article class="our-products">
                 <section class="our-products-site">
                     <h2 class="our-products-site__title">OUR PRODUCTS</h2>
                         <article class="our-products-site__object">
@@ -62,10 +62,67 @@
                                 </div>
                             </div> 
                         </article>
-                </section>
+                </section> -->
 
-                
-
+                <!-- our-products -->
+                <article class="our-products">
+                    <section class="our-products-site">
+                        <h2 class="our-products-site__title">OUR PRODUCTS</h2>
+                        <article id="carouselExampleDark" class="carousel carousel-dark slide">
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner our-products-site-box">
+                            <div class="carousel-item active our-products-site-box-content" data-bs-interval="10000">
+                                <picture>
+                                    <source srcset="./images/shelf_1x.png 1x, ./images/shelf_2x.png 2x" media="(min-width: 480px)">
+                                    <img class="our-products-site-box-content__img d-block" src="./images/shelf_1x.png" alt="shelf">
+                                </picture>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <span class="our-products-site-box-content__info">Minimalist storage solutions</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <picture>
+                                    <source srcset="./images/sofa_1x.png 1x, ./images/sofa_2x.png 2x" media="(min-width: 480px)">
+                                    <img class="our-products-site-box-content__img d-block" src="./images/sofa_1x.png" alt="sofa">
+                                </picture>
+                                <div class="carousel-caption d-none d-md-block">
+                                <span class="our-products-site-box-content__info">Handcrafted minimalist seating</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <source srcset="./images/table_1x.png 1x, ./images/table_2x.png 2x" media="(min-width: 480px)">
+                                    <img class="our-products-site-box-content__img d-block" src="./images/table_1x.png" alt="shelf">
+                                </picture>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <span class="our-products-site-box-content__info">Sleek and simple tables</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item active our-products-site-box-content" data-bs-interval="2000">
+                                <picture>
+                                    <source srcset="./images/chair_1x.png 1x, ./images/chair_2x.png 2x" media="(min-width: 480px)">
+                                    <img class="our-products-site-box-content__img" src="./images/chair_1x.png" alt="shelf">
+                                </picture>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <span class="our-products-site-box-content__info">Minimalist seating for every space</span>
+                                </div>
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Минулий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Наступний</span>
+                            </button>
+                        </article>
+                    </section>
 
                 </div>
             </article>

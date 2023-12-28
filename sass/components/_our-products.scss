@@ -1,6 +1,5 @@
 .our-products{
     width: 100%;
-    
 
     &-site{
         display: flex;
@@ -12,63 +11,37 @@
             color: $main_color;
             font-weight: bold;
         }
-
-        &__object{
-            display: flex;
-            justify-content: space-between;
-        }
-    
-        
-        &-box{    
-            margin-right: 24px;
-
-            &--invisible{
-                display: none;
-            }
-
-            &--douinvisible{
-                display: none;
-            }
-
-
-                &-content{
-                    display: flex;
-                    flex-direction: column;
-                    
-        
-                    &__img{
-                        width: 343px;
-                        height: 300px;
-                    }
+            &-box-content{
+                &__img{
+                    width: 343px;
+                    height: 300px;
+                    margin-left: 100px;
+                }
             
-                    &__info{
-                        @include text;
-                        color: $main_color;
-                        margin-top: 15px;
-                    }
+                &__info{
+                    width: 150px;
+                    text-align: center;
+                    position: absolute;
+                    top: -40px;
+                    left: 100px;
+                    @include text;
+                    color: $white ;
+                    margin-top: 15px;
                 }
             }
+        }
+
+        .carousel-inner{
+            width: 500px;
+        }
     }
-}
 
     @media (max-width: $mobile) {
-        .our-products-site__object {
-            .our-products-site-box--invisible,
-            .our-products-site-box--douinvisible {
-                display: none;
-            }
-        }
+        
     }
 
     @media (min-width: $tablet) {
-        .our-products-site__object {
-            .our-products-site-box--invisible {
-                display: block;
-            }
-            .our-products-site-box--douinvisible {
-                display: none;
-            }
-        }
+        
     
         .our-products-site-box-content__img{
             width: 344px;
@@ -78,12 +51,7 @@
     }
 
     @media (min-width: $desktop) {
-        .our-products-site__object {
-            .our-products-site-box--invisible,
-            .our-products-site-box--douinvisible {
-                display: block;
-            }
-        }
+       
 
         .our-products-site-box-content__img{
             width: 312px;
