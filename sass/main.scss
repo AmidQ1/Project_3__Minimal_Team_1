@@ -1,22 +1,10 @@
 // utils
-    @import "utils/placeholders";
-    @import "utils/mixins";
-    @import "utils/varibles";
+@import "utils/placeholders";
+@import "utils/mixins";
+@import "utils/varibles";
 
 // comp
-    @import "components/base";
-    @import "components/bestsellers";
+@import "components/base";
+@import "components/bestsellers";
 
 // main
-.bestsellers {
-    width: 1096px;
-    height: 637px;
-    margin-left: 172px;
-}
-
-.bestsellers__header {
-    @include title;
-    color: $main_color;
-    display: flex;
-    justify-content: center;
-}
