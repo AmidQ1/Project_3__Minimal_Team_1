@@ -6,56 +6,84 @@
         flex-direction: column;
         align-items: center;
 
+        &__object{
+            display: flex;
+            justify-content: space-between;
+        }
+
         &__title{
             @include title;
             color: $main_color;
             font-weight: bold;
         }
-            &-box-content{
+            &-box{
+            margin-right: 15px;
+            &-content{
+                
+                display: flex;
+                flex-direction: column;
+                
                 &__img{
                     width: 343px;
                     height: 300px;
-                    margin-left: 100px;
                 }
             
                 &__info{
-                    width: 150px;
                     text-align: center;
-                    position: absolute;
-                    top: -40px;
-                    left: 100px;
                     @include text;
-                    color: $white ;
+                    color: $main_color;
                     margin-top: 15px;
                 }
             }
         }
-
-        .carousel-inner{
-            width: 500px;
         }
     }
 
-    @media (max-width: $mobile) {
-        
+    .our-products-site__title_tablet-mobile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .carousel-mobile{
+        display: block;
+    }
+
+    .carousel-tablet{
+        display: none;
+    }
+
+    .our-products__desktop{
+        display: none;
     }
 
     @media (min-width: $tablet) {
-        
-    
-        .our-products-site-box-content__img{
-            width: 344px;
-            height: 300px;
-            margin-right: 16px;
+        .carousel-mobile{
+            display: none;
+        }
+
+        .carousel-tablet{
+            display: block;
+        }
+
+        .our-products__desktop{
+            display: none;
         }
     }
 
     @media (min-width: $desktop) {
-       
-
-        .our-products-site-box-content__img{
-            width: 312px;
-            height: 300px;
-            margin-right: 20px;
+        .carousel-mobile{
+            display: none;
         }
+
+        .carousel-tablet{
+            display: none;
+        }
+
+        .our-products__desktop{
+            display: block;
+        }
+    }
+
+    .photo{
+        width: 350px !important;
     }
