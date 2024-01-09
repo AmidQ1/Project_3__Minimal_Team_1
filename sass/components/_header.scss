@@ -4,6 +4,7 @@
 
     &__wrapper {
         display: flex;
+        align-items: center;
     }
 
     &__list {
@@ -12,11 +13,21 @@
 
         &_menu {
             list-style: none;
+            display: flex;
+            justify-content: space-between
         }
 
         &-item {
-            @include text;
-            color: $main_color;
+            // @include text;
+            // color: $main_color;
+            // text-decoration: none;
+
+            &_link {
+                @include text;
+                color: $main_color;
+                text-decoration: none;
+                padding-left: 30px;
+            }
         }
     }
 }
