@@ -4,8 +4,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-left: 16px;
-    padding-right: 16px;
     padding-bottom: 36px;
     
     &__title{
@@ -19,10 +17,10 @@
         align-items: center;
 
         &-box{
-
             border-radius: 8px;
             background-color: $white;
-            margin-right: 24px;
+            margin-right: 16px;
+            margin-left: 16px;
 
             &_james{
                 display: none;
@@ -42,7 +40,8 @@
                 &__message{
                     @extend %message;
                     margin-left: 24px;
-                    padding: 15px;
+                    padding-top: 24px;
+                    padding-bottom: 24px;
 
                     color: $main_color;
                 }
