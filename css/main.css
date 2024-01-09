@@ -9,6 +9,8 @@
 .container {
   overflow-x: hidden;
   width: 100%;
+  margin-left: 16px;
+  margin-right: 16px;
   margin: 0 auto;
 }
 
