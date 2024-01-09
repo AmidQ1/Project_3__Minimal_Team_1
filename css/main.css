@@ -188,8 +188,6 @@ input[type=checkbox]:checked + label::before {
 .container {
   width: 100%;
   overflow-x: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
   margin: 0 auto;
 }
 
