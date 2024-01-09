@@ -1,10 +1,12 @@
 .clients-reviews{
-    width: 100%;
-
     background-color: $bg_section;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 36px;
     
     &__title{
         @include title;
@@ -81,6 +83,7 @@
 @media (min-width: $tablet){
     .clients-reviews{
     height: 466px;
+    padding: 0;
 
     &-site{
 
@@ -110,6 +113,7 @@
 @media (min-width: $desktop){
     .clients-reviews{
     height: 501px;
+    padding-bottom: 0;
     padding-left: 24px;
 
     &-site{
