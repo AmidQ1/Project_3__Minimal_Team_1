@@ -9,13 +9,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Minimal</title>
 </head>
 <body>
     <main>
         <section class="container container-large">
-            
+                <!-- banner -->
+                <section class="banner">
+                    <article class="banner-pict">
+                        <picture>
+                            <!-- desktop -->
+                            <source srcset="./images/banner_desktop_1x.png 1x, ./images/banner_desktop_2x.png 2x" media="(min-width: 1200px)">
+                            <!-- table -->
+                            <source srcset="./images/banner_tablet_1x.png 1x, ./images/banner_tablet_2x.png 2x"  media="(min-width: 768px)">
+                            <!-- mobile -->
+                            <source srcset="./images/banner_mobile_1x.png 1x, ./images/banner_mobile_2x.png 2x"  media="(max-width: 480px)">
+                            <img class="banner-pict__img-banner" src="./images/banner_mobile_2x.png" alt="banner">
+                        </picture>
+                        <picture>
+                            <!-- desktop -->
+                            <source srcset="./images/banner_min_desk_1x.png 1x, ./images/banner_min_desk_2x.png 2x" media="(min-width: 1200px)">
+                            <img class="banner-pict__img-banner-min" src="./images/banner_min_desk_1x.png" alt="min_desktop">
+                        </picture>
+                    </article>
+                    <article class="banner-box">
+                        <h1 class="banner-box__title">Modern and minimalist furniture for you</h1>
+                    </article>
+                    <article class="banner-content">
+                        <p class="banner-content__subtitle">Add a touch of elegance to your space with handcrafted furniture pieces</p>
+                        <button class="banner-content__button">Subscribe</button>
+                    </article>
+                </section>
         </section>
     </main>
 </body>

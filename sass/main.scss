@@ -1,3 +1,8 @@
+// utils 
+    @import "utils/varibles";
+    @import "utils/placeholders";
+    @import "utils/mixins";
+   
 // utils
     @import "utils/varibles";   
     @import "utils/placeholders";
@@ -5,3 +10,4 @@
 
 // comp
     @import "components/base";
+    @import "components/banner";
