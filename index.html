@@ -75,7 +75,7 @@
                 </div>
             </article>
             <article style="display: flex; align-items: center; justify-content: center;">
-                <div class="multiple-items-mobile carousel carousel-mobile" style="width: 480px !important; padding: 0 !important;">
+                <div class="multiple-items-mobile carousel carousel-mobile" style="width: 100vw !important; padding: 0 !important;">
                     <div class="photo">
                         <picture>
                             <source srcset="./images/shelf_1x.png 1x, ./images/shelf_2x.png 2x" media="(min-width: 480px)">
@@ -153,7 +153,6 @@
             $(document).ready(function () {
               $(".multiple-items").slick({
                 infinite: true,
-                autoplay: true,
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 autoplaySpeed: 500
@@ -163,7 +162,6 @@
             $(document).ready(function () {
               $(".multiple-items-mobile").slick({
                 infinite: true,
-                autoplay: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplaySpeed: 500
