@@ -27,6 +27,8 @@
             &__title{
                 @include title;
                 width: 250px;
+                font-size: 28px;
+                line-height: 42px;
                 font-weight: bold;
                 color: $main_color;
                 position: relative;
@@ -74,6 +76,8 @@
 
         &-text__title{
             width: 580px;
+            font-size: 32px;
+            line-height: 45px; 
             transform: translateX(-7%);
         }
         }
@@ -87,6 +91,8 @@
         width: 1096px;
             &-text__title{
                 width: 896px;
+                font-size: 32px;
+                line-height: 45px;
                 transform: translateX(-5%);
             }
         }

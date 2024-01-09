@@ -54,6 +54,8 @@
   line-height: 45px;
   text-transform: uppercase;
   width: 250px;
+  font-size: 28px;
+  line-height: 42px;
   font-weight: bold;
   color: #0A224A;
   position: relative;
@@ -98,6 +100,8 @@
   }
   .menu-site-box-text__title {
     width: 580px;
+    font-size: 32px;
+    line-height: 45px;
     transform: translateX(-7%);
   }
 }
@@ -110,6 +114,8 @@
   }
   .menu-site-box-text__title {
     width: 896px;
+    font-size: 32px;
+    line-height: 45px;
     transform: translateX(-5%);
   }
 }
