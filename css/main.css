@@ -1,27 +1,26 @@
 .container {
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 @media (min-width: 768px) {
   .container {
-    padding-left: 32px;
-    padding-right: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
 @media (max-width: 1440px) {
   .container {
     width: 1020px;
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container-large {
     width: 1096px;
   }
 }
 .bestsellers {
-  width: 1096px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -40,9 +39,6 @@
   justify-content: center;
   padding-top: 15px;
   padding-bottom: 10px;
-}
-.bestsellers__card {
-  width: 100%;
 }
 .bestsellers__card_header {
   font-family: "Roboto", sans-serif;
@@ -96,9 +92,6 @@
 }
 
 @media screen and (max-width: 1140px) {
-  .bestsellers {
-    width: 704px;
-  }
   .bestsellers__section {
     flex-direction: column;
   }
@@ -115,9 +108,6 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .bestsellers {
-    width: 343px;
-  }
   .bestsellers__section {
     flex-direction: column;
   }

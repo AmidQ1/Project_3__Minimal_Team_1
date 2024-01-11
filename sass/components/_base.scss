@@ -1,15 +1,15 @@
 // mobile
 .container{
     width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 // table
 @media (min-width: $table){
     .container{
-        padding-left: 32px;
-        padding-right: 32px;
+        margin-left: 32px;
+        margin-right: 32px;
     }
 }
 
@@ -17,8 +17,8 @@
 @media (max-width: $desktop){
     .container{
         width: 1020px;
-        padding-left: 0;
-        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
 
         &-large{
             width: 1096px;

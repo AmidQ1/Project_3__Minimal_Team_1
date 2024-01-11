@@ -1,5 +1,5 @@
 .bestsellers {
-    width: 1096px;
+    // width: 1096px;
     // height: 637px;
     // min-width: 343px;
     // margin-left: 172px;
@@ -21,7 +21,7 @@
     }
 
     &__card {
-        width: 100%;
+        // width: 100%;
 
         &_header {
             @include text;
@@ -69,7 +69,7 @@
 
   @media screen and (max-width: 1140px) {
     .bestsellers {
-      width: 704px;
+      // width: 704px;
     }
 
     .bestsellers__section {
@@ -93,7 +93,7 @@
 
 @media screen and (max-width: 768px) {
     .bestsellers {
-      width: 343px;
+      // width: 343px;
     }
 
     .bestsellers__section {
