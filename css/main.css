@@ -96,7 +96,6 @@
 
 @media (min-width: 768px) {
   .newsletter {
-    height: 1055px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,23 +186,21 @@ input[type=checkbox]:checked + label::before {
 
 .container {
   width: 100%;
-  overflow-x: hidden;
   margin-left: 16px;
   margin-right: 16px;
-  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .container {
-    padding-left: 32px;
-    padding-right: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
 @media (min-width: 1440px) {
   .container {
     width: 1096px;
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container-large {
     width: 1320px;
