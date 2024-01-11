@@ -3,20 +3,19 @@
   overflow-x: hidden;
   margin-left: 16px;
   margin-right: 16px;
-  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .container {
-    padding-left: 32px;
-    padding-right: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
 @media (min-width: 1440px) {
   .container {
     width: 1096px;
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
   .container-large {
     width: 1320px;
