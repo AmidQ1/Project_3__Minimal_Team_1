@@ -1,13 +1,11 @@
 .clients-reviews{
     background-color: $bg_section;
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     padding-bottom: 36px;
     
     &__title{
         @include title;
+        text-align: center;
         color: $main_color;
         font-weight: bold;
     }
@@ -15,12 +13,15 @@
     &-site{
         display: flex;
         align-items: center;
+        justify-content: center;
+        
+        
 
         &-box{
             border-radius: 8px;
             background-color: $white;
-            margin-right: 16px;
-            margin-left: 16px;
+            margin-right: 10px;
+            margin-left: 10px;
 
             &_james{
                 display: none;
@@ -81,16 +82,11 @@
 
 @media (min-width: $tablet){
     .clients-reviews{
-    height: 466px;
-    padding: 0;
-
-    &-site{
-
-        &-box{
+    padding-right: 0;
+    padding-left: 0;
+    &-site-box{
             width: 344px;
             height: 319px;
-
-            margin-right: 14px;
 
             &_james{
                 display: block;
@@ -105,19 +101,12 @@
                 }
             }
         }
-    }
 }
 }
 
 @media (min-width: $desktop){
     .clients-reviews{
-    height: 501px;
-    padding-bottom: 0;
-    padding-left: 24px;
-
-    &-site{
-
-        &-box{
+    &-site-box{
             width: 424px;
             height: 306px;
 
@@ -137,6 +126,5 @@
                 }
             }
         }
-    }
 }
 }
