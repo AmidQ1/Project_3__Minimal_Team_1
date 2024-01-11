@@ -1,8 +1,8 @@
 .footer {
     background: $main_color;
-    height: 262px;
     padding-top: 48px;
     padding-left: 60px;
+    width: 100%;
 
     &__upper-section {
         display: flex;
@@ -15,7 +15,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-right: 858px;
+        padding-right: 920px;
 
         &__item {
             color: $white;
@@ -47,9 +47,28 @@
         list-style: none;
 
         &__item {
-            color:$white;
+            color: $white;
             @include text;
             padding-right: 30px;
         }
     }
+}
+
+@media screen and (max-width: 1140px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .footer__list {
+        flex-direction: column;
+    }
+
+    // .footer__middle-section
+    // .footer__lower-section {
+    //     display: flex;
+    // }
+}
+
+@media screen and (max-width: 480px) {
+
 }
