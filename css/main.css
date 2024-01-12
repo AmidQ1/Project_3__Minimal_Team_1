@@ -33,6 +33,9 @@
 .our-products {
   width: 100%;
 }
+.our-products-object {
+  margin-top: 100px;
+}
 .our-products-site {
   display: flex;
   flex-direction: column;
@@ -120,6 +123,7 @@
 .banner {
   width: 100%;
   height: 717px;
+  margin-bottom: 100px;
   position: relative;
 }
 .banner-pict {
@@ -172,9 +176,6 @@
 }
 
 @media (min-width: 768px) {
-  .banner {
-    height: 860px;
-  }
   .banner-box {
     padding-top: 0;
     padding-left: 0;
@@ -198,7 +199,6 @@
     height: 530px;
   }
   .banner-pict {
-    width: 1320px;
     display: flex;
   }
   .banner-pict__img-banner-min {

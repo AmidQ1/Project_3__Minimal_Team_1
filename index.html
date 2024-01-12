@@ -28,8 +28,8 @@
     <main>
         <section class="container container-large">
                 <!-- banner -->
-                <section class="banner">
-                    <article class="banner-pict">
+                <article class="banner">
+                    <div class="banner-pict">
                         <picture>
                             <!-- desktop -->
                             <source srcset="./images/banner_desktop_1x.png 1x, ./images/banner_desktop_2x.png 2x" media="(min-width: 1200px)">
@@ -44,19 +44,20 @@
                             <source srcset="./images/banner_min_desk_1x.png 1x, ./images/banner_min_desk_2x.png 2x" media="(min-width: 1200px)">
                             <img class="banner-pict__img-banner-min" src="./images/banner_min_desk_1x.png" alt="min_desktop">
                         </picture>
-                    </article>
-                    <article class="banner-box">
+                    </div>
+                    <div class="banner-box">
                         <h1 class="banner-box__title">Modern and minimalist furniture for you</h1>
-                    </article>
-                    <article class="banner-content">
+                    </div>
+                    <div class="banner-content">
                         <p class="banner-content__subtitle">Add a touch of elegance to your space with handcrafted furniture pieces</p>
                         <button class="banner-content__button">Subscribe</button>
-                    </article>
-                </section>
+                    </div>
+                </article>
 
             <!-- our-products desktop -->
+            <article class="our-products-object">
             <h2 class="our-products-site__title our-products-site__title_tablet-mobile">OUR PRODUCTS</h2>
-            <article class="our-products__desktop">
+            <div class="our-products__desktop">
                 <div class="our-products">
                     <div class="our-products-site">
                             <div class="our-products-site__object">
@@ -102,8 +103,8 @@
                             </div>
                     </div>
                 </div>
-            </article>
-            <article style="display: flex; align-items: center; justify-content: center;">
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center;">
                 <div class="multiple-items-mobile carousel carousel-mobile" style="width: 100vw !important; padding: 0 !important;">
                     <div class="photo">
                         <picture>
@@ -134,8 +135,8 @@
                         <span class="our-products-site-box-content__info">Minimalist seating for every space</span>
                     </div>
                 </div>
-            </article>
-            <article style="display: flex; align-items: center; justify-content: center;">
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center;">
                 <div class="multiple-items carousel carousel-tablet" style="width: 768px !important; padding: 0 ;">
                     <div class="photo">
                         <picture>
@@ -166,6 +167,7 @@
                         <span class="our-products-site-box-content__info">Minimalist seating for every space</span>
                     </div>
                 </div>
+            </div>
             </article>
         </section>
     </main>
