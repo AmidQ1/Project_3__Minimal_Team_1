@@ -1,7 +1,6 @@
 // mobile
 .container{
     overflow-x: hidden;
-    width: 100%;
     margin-left: 16px;
     margin-right: 16px;
 }
@@ -18,8 +17,8 @@
 @media (min-width: $desktop){
     .container{
         width: 1096px;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: auto;
+        margin-right: auto;
 
         &-large{
             width: 1320px;
