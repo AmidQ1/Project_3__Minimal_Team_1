@@ -94,6 +94,40 @@
   color: #7A7A7A;
 }
 
+.email_error {
+  position: relative;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.error-icon {
+  color: red;
+  display: none;
+  position: absolute;
+  top: 17px;
+  right: 35px;
+  margin-left: 5px;
+  border: 1px solid red;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 18px;
+}
+
+.error-icon::before {
+  content: "!";
+  font-size: 12px;
+  font-weight: bold;
+  color: red;
+}
+
 @media (min-width: 768px) {
   .newsletter {
     display: flex;

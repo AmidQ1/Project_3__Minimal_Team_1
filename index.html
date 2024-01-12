@@ -23,16 +23,20 @@
                             <h2 class="newsletter-description__title"><b>NEWSLETTER</b></h2>
                             <p class="newsletter-description__subtitle"><b>Every week we will send you new designs and information about sales.</b></p>
                         </div>
-                            <div class="newsletter-input">
-                            <input class="newsletter-input__text newsletter-input__text-name" placeholder="Name" type="name" id="input-name">
-                            <input class="newsletter-input__text newsletter-input__text-email" placeholder="E-mail" type="email" id="input-email">
+                        <div class="newsletter-input">
+                            <input class="newsletter-input__text newsletter-input__text-name" placeholder="Name" type="text" id="input-name">
+                            <div class="email_error">
+                                <input class="newsletter-input__text newsletter-input__text-mail" id="email" type="text" placeholder="Email" />
+                                <span class="error" id="emailError"></span>
+                                <span class="error-icon" id="emailErrorIcon"></span>
                             </div>
+                        </div>
                         <div class="newsletter-content">
                             <div class="newsletter-content-box">
                                 <input name="checkbox" id="checkbox" type="checkbox">
-                                    <label class="newsletter-content-box__check-text" for="checkbox" >Agree to subscribe to the newsletter</label>
+                                <label class="newsletter-content-box__check-text" for="checkbox" >Agree to subscribe to the newsletter</label>
                             </div>
-                            <button class="newsletter-content__button">Send</button>
+                            <button class="newsletter-content__button" id="send">Send</button>
                         </div>
                     </article>
                     <picture>
@@ -49,5 +53,27 @@
             </article>
         </section>
     </main>
+
+    <script>
+        document.getElementById("send").addEventListener("click", function() {
+            var emailInputValue = document.getElementById("email").value;
+            var emailError = document.getElementById('emailError');
+            var emailErrorIcon = document.getElementById('emailErrorIcon');
+
+            // Регулярний вираз для перевірки правильності емейлу
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Перевірка, чи емейл відповідає регулярному виразу
+            if (!emailPattern.test(emailInputValue)) {
+                emailErrorIcon.style.display = "inline-block";
+                document.getElementById("email").style.borderColor = "red";
+            } else {
+                emailError.textContent = "";
+                emailErrorIcon.style.display = "none";
+                document.getElementById("email").style.borderColor = "#ccc";
+                // Тут можна додати логіку для відправки даних
+            }
+        });
+    </script>
 </body>
 </html>
