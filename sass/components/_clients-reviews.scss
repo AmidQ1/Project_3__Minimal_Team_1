@@ -2,6 +2,10 @@
     background-color: $bg_section;
     width: 100%;
     padding-bottom: 36px;
+
+    &__wrap{
+        background-color: $bg_section;
+    }
     
     &__title{
         @include title;

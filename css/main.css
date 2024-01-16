@@ -33,6 +33,9 @@
   width: 100%;
   padding-bottom: 36px;
 }
+.clients-reviews__wrap {
+  background-color: #F7FAFF;
+}
 .clients-reviews__title {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
