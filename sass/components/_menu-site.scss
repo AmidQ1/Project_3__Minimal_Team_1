@@ -3,11 +3,13 @@
 
     &-box{
         width: 95%;
+        margin-bottom: 30px;
         display: flex;
         flex-direction: column;
 
         &__line{
             width: 100%;
+            margin-bottom: 30px;
             height: 1px;
             background-color: $main_color;
         }
