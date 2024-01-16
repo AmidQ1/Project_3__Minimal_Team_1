@@ -1,7 +1,19 @@
+.banner-content__button {
+  display: flex;
+  width: 224px;
+  height: 50px;
+  padding: 17px 65px;
+  justify-content: center;
+  align-items: center;
+  background: #0A224A;
+}
+
 .container {
   width: 100%;
+  overflow-x: hidden;
   margin-left: 16px;
   margin-right: 16px;
+  margin-bottom: 100px;
 }
 
 @media (min-width: 768px) {
@@ -25,11 +37,13 @@
 }
 .menu-site-box {
   width: 95%;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
 }
 .menu-site-box__line {
   width: 100%;
+  margin-bottom: 30px;
   height: 1px;
   background-color: #0A224A;
 }
@@ -99,5 +113,199 @@
     font-size: 32px;
     line-height: 45px;
     transform: translateX(-5%);
+  }
+}
+.our-products {
+  width: 100%;
+}
+.our-products-object {
+  margin-top: 100px;
+}
+.our-products-site {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-products-site__object {
+  display: flex;
+  justify-content: space-between;
+}
+.our-products-site__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #0A224A;
+  font-weight: bold;
+}
+.our-products-site-box {
+  margin-right: 15px;
+}
+.our-products-site-box-content {
+  display: flex;
+  flex-direction: column;
+}
+.our-products-site-box-content__img {
+  width: 343px;
+  height: 300px;
+}
+.our-products-site-box-content__info {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  color: #0A224A;
+  margin-top: 15px;
+}
+
+.our-products-site__title_tablet-mobile {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-mobile {
+  display: block;
+}
+
+.carousel-tablet {
+  display: none;
+}
+
+.our-products__desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .carousel-mobile {
+    display: none;
+  }
+  .carousel-tablet {
+    display: block;
+  }
+  .our-products__desktop {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .carousel-mobile {
+    display: none;
+  }
+  .carousel-tablet {
+    display: none;
+  }
+  .our-products__desktop {
+    display: block;
+  }
+}
+.photo {
+  width: 350px;
+}
+
+.banner {
+  width: 100%;
+  height: 717px;
+  position: relative;
+}
+.banner-pict {
+  position: relative;
+}
+.banner-pict__img-banner {
+  position: absolute;
+  z-index: -1;
+}
+.banner-pict__img-banner-min {
+  display: none;
+}
+.banner-box {
+  padding-top: 140px;
+  padding-left: 16px;
+}
+.banner-box__title {
+  width: 285px;
+  color: #0A224A;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.banner-content {
+  padding-left: 16px;
+}
+.banner-content__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  width: 343px;
+  color: #0A224A;
+  font-size: 16px;
+  margin-bottom: 21px;
+}
+.banner-content__button {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  border: none;
+  color: #FFF;
+}
+
+@media (min-width: 768px) {
+  .banner-box {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .banner-box__title {
+    width: 648px;
+    font-size: 50px;
+    line-height: 75px;
+    margin-bottom: 410px;
+  }
+  .banner-content {
+    padding: 0;
+  }
+  .banner-content__subtitle {
+    width: 312px;
+    margin-bottom: 41px;
+  }
+}
+@media (min-width: 1440px) {
+  .banner {
+    height: 530px;
+  }
+  .banner-pict {
+    display: flex;
+  }
+  .banner-pict__img-banner-min {
+    z-index: -1;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+  }
+  .banner-box {
+    padding: 0;
+  }
+  .banner-box__title {
+    width: 648px;
+    font-size: 50px;
+    line-height: 75px;
+    margin-top: 0;
+    margin-bottom: 235px;
+  }
+  .banner-content {
+    padding: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
