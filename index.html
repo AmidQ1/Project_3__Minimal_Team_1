@@ -308,8 +308,68 @@
         </section>
         </div>
 
+        <section class="container container-large">
+            <!-- NEWSLETTER -->
+            <article>
+                <div class="newsletter">
+                    <div class="newsletter-info">
+                        <div class="newsletter-description">
+                            <h2 class="newsletter-description__title"><b>NEWSLETTER</b></h2>
+                            <p class="newsletter-description__subtitle"><b>Every week we will send you new designs and information about sales.</b></p>
+                        </div>
+                        <div class="newsletter-input">
+                            <input class="newsletter-input__text" placeholder="Name" type="text" id="input-name">
+                            <div class="email_error">
+                                <input class="newsletter-input__text" id="email" type="text" placeholder="Email" />
+                                <span class="error" id="emailError"></span>
+                                <span class="error-icon" id="emailErrorIcon"></span>
+                            </div>
+                        </div>
+                        <div class="newsletter-content">
+                            <div class="newsletter-content-box">
+                                <input name="checkbox" id="checkbox" type="checkbox">
+                                <label class="newsletter-content-box__check-text" for="checkbox" >Agree to subscribe to the newsletter</label>
+                            </div>
+                            <button class="newsletter-content__button" id="send">Send</button>
+                        </div>
+                    </div>
+                    <picture>
+                        <!-- desktop -->
+                        <source srcset="./images/newsletter_desktop_1x.png 1x, ./images/newsletter_desktop_2x.png 2x" media="(min-width: 1200px)">
+                        <!-- tablet -->
+                        <source srcset="./images/newsletter_tablet_1x.png 1x, ./images/newsletter_tablet_2x.png 2x" media="(min-width: 768px)">
+                        <!-- mobile -->
+                        <source srcset="./images/newsletter_mobile_1x.png 1x, ./images/newsletter_mobile_2x.png 2x" media="(max-width: 480px)">
+
+                        <img class="newsletter__img-newsletter" src="./images/newsletter_mobile_1x.png" alt="newsletter">
+                    </picture>
+                </div>
+            </article>
+            </section>
+
     </main>
 
+    <script>
+        document.getElementById("send").addEventListener("click", function() {
+            var emailInputValue = document.getElementById("email").value;
+            var emailError = document.getElementById('emailError');
+            var emailErrorIcon = document.getElementById('emailErrorIcon');
+
+            // Регулярний вираз для перевірки правильності емейлу
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Перевірка, чи емейл відповідає регулярному виразу
+            if (!emailPattern.test(emailInputValue)) {
+                emailErrorIcon.style.display = "inline-block";
+                document.getElementById("email").style.borderColor = "red";
+            } else {
+                emailError.textContent = "";
+                emailErrorIcon.style.display = "none";
+                document.getElementById("email").style.borderColor = "#ccc";
+                // Тут можна додати логіку для відправки даних
+            }
+        });
+    </script>
     <script
             type="text/javascript"
             src="https://code.jquery.com/jquery-1.11.0.js"
@@ -338,5 +398,5 @@
             });
     </script>
 </body>
-
 </html>
+
