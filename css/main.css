@@ -13,7 +13,7 @@
   max-width: 100%;
 }
 .newsletter__img-newsletter {
-  width: 343px;
+  width: 90%;
   height: auto;
 }
 .newsletter-description {
@@ -44,6 +44,7 @@
   width: 100%;
 }
 .newsletter-input__text {
+  width: 80%;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -56,9 +57,6 @@
   border: 1px solid #7A7A7A;
   margin-bottom: 20px;
   margin-left: 0;
-}
-.newsletter-input__text-name, .newsletter-input__text-email {
-  width: 80%;
 }
 .newsletter-content {
   width: 100%;
@@ -96,6 +94,7 @@
 
 .email_error {
   position: relative;
+  width: 100%;
 }
 
 .error {
@@ -111,7 +110,7 @@
   display: none;
   position: absolute;
   top: 17px;
-  right: 35px;
+  right: 15%;
   margin-left: 5px;
   border: 1px solid red;
   width: 18px;
@@ -129,6 +128,9 @@
 }
 
 @media (min-width: 768px) {
+  .error-icon {
+    right: 85px;
+  }
   .newsletter {
     display: flex;
     flex-direction: column;
@@ -155,6 +157,9 @@
   }
 }
 @media (min-width: 1440px) {
+  .error-icon {
+    right: 35px;
+  }
   .newsletter {
     height: 597px;
     display: flex;
@@ -185,7 +190,6 @@
   }
   .newsletter__img-newsletter {
     width: 460px;
-    height: auto;
   }
 }
 input[type=checkbox] {

@@ -2,7 +2,7 @@
     max-width: 100%;
 
     &__img-newsletter{
-        width: 343px;
+        width: 90%;
         height: auto;
     }
 
@@ -28,6 +28,7 @@
         width: 100%;
 
         &__text{
+            width: 80%;
             @include text;
             color: $gray;
             padding: 11px 20px;
@@ -37,10 +38,6 @@
             border: 1px solid $gray;
             margin-bottom: 20px;
             margin-left: 0;
-
-            &-name, &-email{
-                width: 80%;
-            }
         }
     }
     
@@ -77,6 +74,7 @@
 
 .email_error{
     position: relative;
+    width: 100%;
 }
 
 
@@ -93,7 +91,7 @@
     display: none;
     position: absolute;
     top: 17px;
-    right: 35px;
+    right: 15%;
     margin-left: 5px;
     border: 1px solid red;
     width: 18px;
@@ -111,6 +109,9 @@
 }
 
 @media (min-width: $tablet){
+    .error-icon {
+        right: 85px;
+    }
 
     .newsletter{
         display: flex;
@@ -148,6 +149,9 @@
 
 
 @media (min-width: $desktop){
+    .error-icon {
+        right: 35px;
+    }
 
     .newsletter{
         height: 597px;
@@ -185,7 +189,6 @@
     
         &__img-newsletter{
             width: 460px;
-            height: auto;
         }
     
     }
