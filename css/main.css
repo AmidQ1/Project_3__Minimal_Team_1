@@ -22,10 +22,6 @@
     width: 1320px;
   }
 }
-.our-сraftsmanship.adaptive {
-  min-width: 480px;
-}
-
 .our-сraftsmanshipp {
   display: flex;
   justify-content: space-between;
@@ -33,9 +29,6 @@
 
 .our-сraftsmanship {
   background: #F7FAFF;
-}
-.our-сraftsmanship__image {
-  min-width: 480px;
 }
 .our-сraftsmanship__about-us {
   display: flex;
@@ -108,15 +101,12 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .our-сraftsmanship.adaptive {
-    max-width: 704px;
-  }
   .our-сraftsmanshipp {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1440px) {
-  .our-сraftsmanship.adaptive {
-    max-width: 1320px;
+  .our-сraftsmanship {
+    padding-right: 69px;
   }
 }
