@@ -1,9 +1,13 @@
-// utils
+ // utils
     @import "utils/varibles";   
     @import "utils/placeholders";
     @import "utils/mixins";
 
 // comp
-    @import "components/newsletter";
     @import "components/base";
-    
+    @import "components/base";
+    @import "components/clients-reviews";
+    @import "components/menu-site";
+    @import "components/our-products";
+    @import "components/banner";
+    @import "components/newsletter";
