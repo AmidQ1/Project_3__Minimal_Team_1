@@ -66,6 +66,8 @@
 
             &__check-text{
                     @include text;
+                    width: 100%;
+                    margin-left: 0;
                     color: $gray;
                 }
             }
@@ -138,6 +140,7 @@
     
         &-content{
             width: 536px;
+
         }
     
         &__img-newsletter{
@@ -195,18 +198,18 @@
 }
 
 
-input[type="checkbox"] {
+.newsletter-content-box__checkbox[type="checkbox"] {
     display: none;
 }
 
-input[type="checkbox"] + label {
+.newsletter-content-box__checkbox[type="checkbox"] + label {
     position: relative;
     padding-left: 30px; 
     cursor: pointer;
     display: inline-block;
 }
 
-input[type="checkbox"] + label::before {
+.newsletter-content-box__checkbox[type="checkbox"] + label::before {
     content: "\2713";
     color: $white;
     padding-left: 5px;
@@ -220,7 +223,7 @@ input[type="checkbox"] + label::before {
     background-color: $white; 
 }
 
-input[type="checkbox"]:checked + label::before {
+.newsletter-content-box__checkbox[type="checkbox"]:checked + label::before {
     background-color: $main_color;
     border-color: $main_color;
   }
