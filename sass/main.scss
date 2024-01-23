@@ -1,10 +1,16 @@
 // utils
+@import "utils/varibles";   
 @import "utils/placeholders";
 @import "utils/mixins";
-@import "utils/varibles";
 
 // comp
 @import "components/base";
 @import "components/bestsellers";
+@import "components/our-сraftsmanship";
+@import "components/clients-reviews";
+@import "components/menu-site";
+@import "components/our-products";
+@import "components/banner";
+@import "components/newsletter";
 
 // main

@@ -1,12 +1,14 @@
 // mobile
 .container{
     width: 100%;
+    overflow-x: hidden;
     margin-left: 16px;
     margin-right: 16px;
+    margin-bottom: 100px;
 }
 
 // table
-@media (min-width: $table){
+@media (min-width: $tablet){
     .container{
         margin-left: 32px;
         margin-right: 32px;
@@ -14,14 +16,14 @@
 }
 
 // desktop
-@media (max-width: $desktop){
+@media (min-width: $desktop){
     .container{
-        width: 1020px;
+        width: 1096px;
         margin-left: auto;
         margin-right: auto;
 
         &-large{
-            width: 1096px;
+            width: 1320px;
         }
     }
 }
