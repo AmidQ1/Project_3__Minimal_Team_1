@@ -282,9 +282,7 @@
   margin-bottom: 30px;
 }
 .clients-reviews-site {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
 }
 .clients-reviews-site-box {
   border-radius: 8px;
@@ -303,6 +301,7 @@
   height: 48px;
   display: flex;
   margin-top: 24px;
+  padding-top: 24px;
   margin-left: 24px;
 }
 .clients-reviews-site-box-object__message {
@@ -365,6 +364,12 @@
   }
 }
 @media (min-width: 1440px) {
+  .clients-reviews-site {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .clients-reviews-site-box {
     width: 424px;
     height: 306px;
@@ -374,6 +379,9 @@
   }
   .clients-reviews-site-box_emily {
     display: block;
+  }
+  .clients-reviews-site-box-object {
+    padding-top: 0;
   }
   .clients-reviews-site-box-object__message {
     width: 360px;
