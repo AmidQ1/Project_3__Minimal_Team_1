@@ -5,7 +5,13 @@
     padding: 17px 65px;
     justify-content: center;
     align-items: center;
-    gap: 6px;
-    flex-shrink: 0;
-    background: var(--Blue-font, #0A224A);
+    background: $main_color;
+}    
+
+%message{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
 }
