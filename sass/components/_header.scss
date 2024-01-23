@@ -39,7 +39,7 @@
     }
 }
 
-@media (max-width: $table) {
+@media (max-width: $tablet) {
     nav {
         order: 1;
     }
@@ -84,6 +84,10 @@
 
     .header__list_menu {
         display: none;
+    }
+
+    input[type="checkbox"] {
+        opacity: 0.5;
     }
 
     input[type="checkbox"]:checked~.header__list_menu {
