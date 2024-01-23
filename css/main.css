@@ -23,13 +23,18 @@
 .header {
   background: var(--Light-blue, #F7FAFF);
   height: 95px;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.header__box {
+  background: var(--Light-blue, #F7FAFF);
 }
 .header__wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header__list {
-  padding-left: 972px;
   padding-top: 26px;
 }
 .header__list_menu {
@@ -48,10 +53,6 @@
   padding-left: 30px;
 }
 
-.site-logo {
-  margin-left: 60px;
-}
-
 @media (max-width: 768px) {
   nav {
     order: 1;
@@ -62,6 +63,7 @@
     width: 40px;
     margin-left: auto;
     position: relative;
+    margin-right: 32px;
   }
   label:hover {
     cursor: pointer;
@@ -117,4 +119,7 @@
   .header__list_menu li {
     margin: 15px 0;
   }
+}
+.site-logo {
+  margin-left: 60px;
 }
