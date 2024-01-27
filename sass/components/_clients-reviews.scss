@@ -17,9 +17,7 @@
     }
 
     &-site{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: none;
         
         
 
@@ -42,6 +40,7 @@
                 height: 48px;
                 display: flex;
                 margin-top: 24px;
+                padding-top: 24px;
                 margin-left: 24px;
 
                 &__message{
@@ -112,7 +111,12 @@
 
 @media (min-width: $desktop){
     .clients-reviews{
-    &-site-box{
+    &-site{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    &-box{
             width: 424px;
             height: 306px;
 
@@ -125,12 +129,13 @@
             }
 
             &-object{
-
+                padding-top: 0;
                 &__message{
                     width: 360px;
                     height: 161px;
                 }
             }
         }
+}
 }
 }
