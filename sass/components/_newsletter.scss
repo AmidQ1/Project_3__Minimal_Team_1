@@ -68,6 +68,8 @@
 
             &__check-text{
                     @include text;
+                    width: 100%;
+                    margin-left: 0;
                     color: $gray;
                 }
             }
@@ -139,6 +141,7 @@
     
         &-content{
             width: 536px;
+
         }
     
         &__img-newsletter{
