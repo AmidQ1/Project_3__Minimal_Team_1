@@ -19,6 +19,8 @@
             @include title;
             color: $main_color;
             font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
             &-box{
             margin-right: 15px;
