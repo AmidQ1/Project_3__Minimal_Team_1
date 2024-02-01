@@ -8,9 +8,9 @@
     @import "components/footer";
 
 // main
-.phone-number {
-    padding-left: 285px;
-}
+// .phone-number {
+//     padding-left: 285px;
+// }
 
 .terms-of-service-text {
     color: $white;
@@ -30,10 +30,10 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $table) {
     .phone-number-middle
     .phone-number-lower
     .email {
-        position: absolute;
+        display: none;
     }
 }

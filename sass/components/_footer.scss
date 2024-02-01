@@ -6,16 +6,17 @@
 
     &__upper-section {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+        gap: 269px;
         align-items: center;
-        padding-right: 500px;
+        // padding-right: 500px;
     }
 
     &__middle-section {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding-right: 920px;
+        gap: 187px;
+        // padding-right: 920px;
 
         &__item {
             color: $white;
@@ -30,6 +31,7 @@
 
     &__lower-section {
         display: flex;
+        gap: 284px;
 
         &__item {
             color: $white;
@@ -45,20 +47,21 @@
     &__list {
         display: flex;
         list-style: none;
+        gap: 30px;
 
         &__item {
             color: $white;
             @include text;
-            padding-right: 30px;
+            // padding-right: 30px;
         }
     }
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: $desktop) {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $table) {
     .footer__list {
         flex-direction: column;
     }
@@ -69,6 +72,6 @@
     // }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: $mobile) {
 
 }

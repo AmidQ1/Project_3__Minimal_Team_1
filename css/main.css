@@ -28,15 +28,13 @@
 }
 .footer__upper-section {
   display: flex;
-  justify-content: space-between;
+  gap: 269px;
   align-items: center;
-  padding-right: 500px;
 }
 .footer__middle-section {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-right: 920px;
+  gap: 187px;
 }
 .footer__middle-section__item {
   color: #FFF;
@@ -49,6 +47,7 @@
 }
 .footer__lower-section {
   display: flex;
+  gap: 284px;
 }
 .footer__lower-section__item {
   color: #FFF;
@@ -62,6 +61,7 @@
 .footer__list {
   display: flex;
   list-style: none;
+  gap: 30px;
 }
 .footer__list__item {
   color: #FFF;
@@ -70,7 +70,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-  padding-right: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -78,10 +77,6 @@
     flex-direction: column;
   }
 }
-.phone-number {
-  padding-left: 285px;
-}
-
 .terms-of-service-text {
   color: #FFF;
   font-family: "Roboto", sans-serif;
@@ -101,6 +96,6 @@
 
 @media screen and (max-width: 768px) {
   .phone-number-middle .phone-number-lower .email {
-    position: absolute;
+    display: none;
   }
 }
