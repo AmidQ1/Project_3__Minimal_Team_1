@@ -977,6 +977,7 @@
   .header__list_menu {
     position: absolute;
     top: 100px;
+    z-index: 999;
     left: 0;
     width: 100%;
     padding: 20px;
