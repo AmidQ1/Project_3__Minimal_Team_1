@@ -1,6 +1,6 @@
 // mobile
 .container{
-    width: 100%;
+    max-width: 100%;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -14,7 +14,7 @@
 }
 
 // desktop
-@media (max-width: $desktop){
+@media (min-width: $desktop){
     .container{
         width: 1020px;
         padding-left: 0;

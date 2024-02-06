@@ -2,7 +2,7 @@
     background: $main_color;
     padding-top: 48px;
     padding-left: 60px;
-    width: 100%;
+    // width: 100%;
 
     &__upper-section {
         display: flex;
@@ -17,6 +17,10 @@
         align-items: center;
         gap: 187px;
         // padding-right: 920px;
+
+    &--tablet {
+        display: none;
+    }
 
         &__item {
             color: $white;
@@ -58,20 +62,26 @@
 }
 
 @media screen and (max-width: $desktop) {
+    .footer__middle-section--tablet {
+        display: initial;
+    }
 
+    .footer__middle-section{
+        display: none;
+    }
+
+    .footer__lower-section {
+        display: none;
+    }
+
+    .footer__list {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: $table) {
     .footer__list {
         flex-direction: column;
     }
-
-    // .footer__middle-section
-    // .footer__lower-section {
-    //     display: flex;
-    // }
-}
-
-@media screen and (max-width: $mobile) {
 
 }
