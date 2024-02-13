@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -21,8 +22,8 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css"
     />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Minimal</title>
     <link rel="icon" href="./images/minimal.png" type="x-icon">
 </head>
@@ -32,7 +33,7 @@
         <div class="header__box">
             <header class="container container-large header">
                 <div class="header__wrapper">
-                    <img class="site-logo" src="./img/logo.svg" alt="site-logo">
+                    <img class="site-logo" src="./img/logo_dark.svg" alt="site-logo">
                     <nav class="header__list">
                         <input style="display: none;" type="checkbox" id="toggle">
                         <label for="toggle">
@@ -543,6 +544,39 @@
             </div>
         </article>
     </section>
+    <footer class="footer" id="contacts">
+      <div class="footer__box">
+        <img class="footer__logo" src="./img/logo_light.svg" alt="logo" />
+        <div class="footer__socials-media">
+          <img class="socials-media__link" src="./img/ph_facebook-logo.svg" alt="facebook" />
+          <img class="socials-media__link" src="./img/ph_instagram-logo.svg" alt="instagram" />
+          <img class="socials-media__link" src="./img/ph_youtube-logo.svg" alt="youtube" />
+        </div>
+      </div>
+      <ul class="footer__list">
+        <li><a href="#about-us" class="list__item">About us</a></li>
+        <li><a href="#ourproducts" class="list__item">Our products</a></li>
+        <li><a href="#prices"class="list__item">Prices</a></li>
+        <li><a href="#bestsellers" class="list__item">Bestsellers</a></li>
+        <li><a href="#reviews" class="list__item">Reviews</a></li>
+      </ul>
+      <div class="footer__address-box">
+        <div class="footer__details">
+          <p class="details__item">Obolonsky Prospect, 14, Kyiv</p>
+          <p class="details__item">Daily 10:00-21:00</p>
+        </div>
+        <div class="footer__contacts">
+          <p class="footer__number">+380669384758</p>
+          <p class="footer__number">+380679384758</p>
+        </div>
+        <p class="footer__post">minimal.furniture@gmail.com</p>
+      </div>
+      <p class="footer__info">
+        By using this website, you agree to the
+        <span class="footer__info--underline">Terms of Service</span> and
+        <span class="footer__info--underline">Privacy Policy</span>
+      </p>
+    </footer>
 </main>
 
 <script>
@@ -595,4 +629,5 @@
         });
 </script>
 </body>
+
 </html>

@@ -4,17 +4,48 @@
 @import "utils/mixins";
 
 // comp
-@import "components/base";
-@import "components/bestsellers";
-@import "components/our-сraftsmanship";
-@import "components/clients-reviews";
-@import "components/menu-site";
-@import "components/our-products";
-@import "components/banner";
-@import "components/newsletter";
-@import "components/header";
+    @import "components/base";
+    @import "components/footer";
+    @import "components/bestsellers";
+    @import "components/our-сraftsmanship";
+    @import "components/clients-reviews";
+    @import "components/menu-site";
+    @import "components/our-products";
+    @import "components/banner";
+    @import "components/newsletter";
+    @import "components/header";
 
 // main
+// .phone-number {
+//     padding-left: 285px;
+// }
+
+.terms-of-service-text {
+    color: $white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1.188px;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 36px;
+
+    &__span {
+        text-decoration-line: underline;
+    }
+}
+
 .site-logo {
     margin-left: 60px;
+}
+
+@media screen and (max-width: $tablet) {
+    .phone-number-middle
+    .phone-number-lower
+    .email {
+        display: none;
+    }
 }
