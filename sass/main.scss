@@ -1,11 +1,19 @@
 // utils
-    @import "utils/placeholders";
-    @import "utils/mixins";
-    @import "utils/varibles";
+@import "utils/varibles";   
+@import "utils/placeholders";
+@import "utils/mixins";
 
 // comp
     @import "components/base";
     @import "components/footer";
+    @import "components/bestsellers";
+    @import "components/our-сraftsmanship";
+    @import "components/clients-reviews";
+    @import "components/menu-site";
+    @import "components/our-products";
+    @import "components/banner";
+    @import "components/newsletter";
+    @import "components/header";
 
 // main
 // .phone-number {
@@ -30,7 +38,11 @@
     }
 }
 
-@media screen and (max-width: $table) {
+.site-logo {
+    margin-left: 60px;
+}
+
+@media screen and (max-width: $tablet) {
     .phone-number-middle
     .phone-number-lower
     .email {

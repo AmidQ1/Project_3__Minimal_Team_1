@@ -1,0 +1,83 @@
+.menu-site{
+    width: 100%;
+
+    &-box{
+        width: 95%;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+
+        &__line{
+            width: 100%;
+            margin-bottom: 30px;
+            height: 1px;
+            background-color: $main_color;
+        }
+
+        &-text{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+
+            &__title{
+                @include title;
+                width: 250px;
+                font-size: 28px;
+                line-height: 42px;
+                font-weight: bold;
+                color: $main_color;
+                position: relative;
+                transform: translateX(-20%);
+                transition: left 0.5s ease;
+                transition-property: all;
+                display: flex;
+                
+                &:hover{
+                    transition: left 0.5s ease;
+                    transition-property: all;
+                    transform: translateX(0);
+                }
+
+                &::before{
+                    content: "";
+                    display: inline-block;
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 3px;
+                    background-color: $main_color;
+                    margin-top: 20px;
+                    margin-right: 14px;
+                }
+            }
+
+            &__price{
+                @include text;
+                font-weight: bold;
+                color: $main_color;
+            }
+        }
+    }
+}
+
+@media (min-width: $tablet){
+    .menu-site-box-text__title{
+        width: 580px;
+        font-size: 32px;
+        line-height: 45px; 
+        transform: translateX(-7%);
+    }
+}
+
+@media (min-width: $desktop){
+    .menu-site-box-text__title{
+        width: 896px;
+        font-size: 32px;
+        line-height: 45px;
+        transform: translateX(-5%);
+    }
+}
